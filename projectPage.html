@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="LogoIcon/PigIcon.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Js Text Moving -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/Css/index.css">
+    <link rel="stylesheet" href="/Css/projectPage.css">
+
+    <title>Alex's Project</title>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="/index.html"><span>Alex's</span> Logo</a>
+                </div>
+                <ul>
+                    <li><a href="/homePage.html">Home</a></li>
+                    <li><a href="/aboutPage.html">About</a></li>
+                    <li><a href="/projectPage.html">Project & Certificate</a></li>
+                    <li><a href="/contactPage.html">Contact</a></li>
+                </ul>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Welcome Title Start -->
+    <div class="welcome-head">
+        <div class="container">
+            <div class="narrow-container">
+                <div class="welcome">
+                    <h1>
+                        Projects & Certificates
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Welcome Title End -->
+
+
+    <!-- Grid Project Start -->
+    <div class="container">
+        <div class="grid">
+            <div class="grid-title">
+                <h1>
+                    My Projects
+                </h1>
+            </div>
+            <div class="grid-con">
+                <div class="grid-row">
+                    <div class="grid-img" style="max-width: 100%;">
+                        <img class="mySlides-CT" src="/PNT-Logo/PNT-1.png" alt="">
+                        <img class="mySlides-CT" style="display: none;" src="/PNT-Logo/PNT-2.png"
+                            alt="">
+                        <img class="mySlides-CT" style="display: none;" src="/PNT-Logo/PNT-3.png"
+                            alt="">
+                        <img class="mySlides-CT" style="display: none;" src="/PNT-Logo/PNT-4.png"
+                            alt="">
+
+                        <div class="grid-img-sm">
+                            <div class="grid-col s4" onclick="currentDivCT(1)">
+                                <img class="CT w3-opacity w3-hover-opacity-off"
+                                    src="/PNT-Logo/PNT-1.png" alt="">
+                            </div>
+                            <div class="grid-col s4" onclick="currentDivCT(2)">
+                                <img class="CT w3-opacity w3-hover-opacity-off"
+                                    src="/PNT-Logo/PNT-2.png" alt="">
+                            </div>
+                            <div class="grid-col s4" onclick="currentDivCT(3)">
+                                <img class="CT w3-opacity w3-hover-opacity-off"
+                                    src="/PNT-Logo/PNT-3.png" alt="">
+                            </div>
+                            <div class="grid-col s4" onclick="currentDivCT(4)">
+                                <img class="CT w3-opacity w3-hover-opacity-off"
+                                    src="/PNT-Logo/PNT-4.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-name">
+                        <h3>
+                            PNT-Design
+                        </h3>
+                    </div>
+                    <div class="grid-desc">
+                        <p>
+                            <a target="_blank" href="https://www.pnt-design.com/">www.pnt-design.com</a>
+                        </p>
+                        <li>
+                            เว็บไซต์ : ผ้าม่าน วอลเปเปอร์ มู่ลี่ ม่านปรับแสง ฉากกั้นห้อง
+                        </li>
+                    </div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-img" style="max-width: 100%;">
+                        <img class="mySlides-CC" style="display: none;" src="/Python-CurrencyConverter/CCC 1.png"
+                            alt="">
+                        <img class="mySlides-CC" src="/Python-CurrencyConverter/CCC 2.png" alt="">
+                        <img class="mySlides-CC" style="display: none;" src="/Python-CurrencyConverter/CCC 3.png"
+                            alt="">
+
+                        <div class="grid-img-sm">
+                            <div class="grid-col s4" onclick="currentDivCC(1)">
+                                <img class="CC w3-opacity w3-hover-opacity-off"
+                                    src="/Python-CurrencyConverter/CCC 1.png" alt="">
+                            </div>
+                            <div class="grid-col s4" onclick="currentDivCC(2)">
+                                <img class="CC w3-opacity w3-hover-opacity-off"
+                                    src="/Python-CurrencyConverter/CCC 2.png" alt="">
+                            </div>
+                            <div class="grid-col s4" onclick="currentDivCC(3)">
+                                <img class="CC w3-opacity w3-hover-opacity-off"
+                                    src="/Python-CurrencyConverter/CCC 3.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-name">
+                        <h3>
+                            Currency Converter
+                        </h3>
+                    </div>
+                    <div class="grid-desc">
+                        <li>
+                            แอพพลิเคชั่นแปลงสกุลเงินตราต่างประเทศ และยังสามารถเช็คอัตราค่าเงินในอดีตได้ ด้วยภาษา Python
+                        </li>
+                    </div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-img" style="max-width: 100%;">
+                        <img class="mySlides-QR" style="display: none;" src="/Python-QRCode Generator/QRCode 1.png"
+                            alt="">
+                        <img class="mySlides-QR" src="/Python-QRCode Generator/QRCode 2.png" alt="">
+
+                        <div class="grid-img-sm">
+                            <div class="grid-col s4" onclick="currentDivQR(1)">
+                                <img class="QR w3-opacity w3-hover-opacity-off"
+                                    src="/Python-QRCode Generator/QRCode 1.png" alt="">
+                            </div>
+                            <div class="grid-col s4" onclick="currentDivQR(2)">
+                                <img class="QR w3-opacity w3-hover-opacity-off"
+                                    src="/Python-QRCode Generator/QRCode 2.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-name">
+                        <h3>
+                            QRCode Generator
+                        </h3>
+                    </div>
+                    <div class="grid-desc">
+                        <li>
+                            แอพพลิเคชั่นสร้าง QRCode ด้วยภาษา Python
+                        </li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Grid Project End -->
+
+
+    <!-- Grid Cer Start -->
+    <div class="container">
+        <div class="grid">
+            <div class="grid-title">
+                <h1>
+                    My Certificates
+                </h1>
+                <div class="grid-con">
+                    <div class="grid-row-cer">
+                        <div class="grid-name-cer">
+                            <h1>
+
+                                <span class="btd1">
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="grid-img-cer">
+                            <img src="/Certificate/Borntodev Certificate - Python3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="grid-row-cer">
+                        <div class="grid-name-cer">
+                            <h1>
+
+
+                                <span class="btd2">
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="grid-img-cer">
+                            <img src="/Certificate/borntodev-acdemy_ChatGPT for Developers_certifiacte.png" alt="">
+                        </div>
+                    </div>
+                    <div class="grid-row-cer">
+                        <div class="grid-name-cer">
+                            <h1>
+
+
+                                <span class="btd3">
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="grid-img-cer">
+                            <img src="/Certificate/borntodev-acdemy_Web Scraping with Python_certifiacte.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid-row-cer">
+                        <div class="grid-name-cer">
+                            <h1>
+
+                                <span class="kmitl">
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="grid-img-cer">
+                            <img src="/Certificate/KMITL - Python.png" alt="">
+                        </div>
+                    </div>
+                    <div class="grid-row-cer">
+                        <div class="grid-name-cer">
+                            <h1>
+
+                                <span class="kmitl2">
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="grid-img-cer">
+                            <img src="/Certificate/KMITL - Data Science.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid-row-cer">
+                        <div class="grid-name-cer">
+                            <h1>
+
+                                <span class="tdga">
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="grid-img-cer">
+                            <img src="/Certificate/DGA - Ux:Ui.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid-row-cer">
+                        <div class="grid-name-cer">
+                            <h1>
+
+                                <span class="th_moc">
+
+                                </span>
+                            </h1>
+                        </div>
+                        <div class="grid-img-cer">
+                            <img src="/Certificate/Thai Mooc - Certificate Html&Css.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Grid Cer End -->
+
+
+    <!-- JavaScript -->
+    <script src="/Js/index.js"></script>
+    <script src="/Js/projectPage.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</body>
+
+</html>

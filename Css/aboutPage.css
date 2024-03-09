@@ -1,0 +1,285 @@
+hr {
+    margin: 40px 0;
+}
+
+/* Welcome Title */
+.welcome h1 {
+    /* background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    color: #969090;
+    font-size: 44px;
+    text-decoration: underline;
+    
+}
+
+/* homePage */
+.head {
+    margin: 0 auto;
+    width: 90%;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    background: #eee;
+    /* border-radius: 10px; */
+    padding: 1rem;
+    
+}
+.head-left {
+    width: 30%;
+}
+.head img {
+    margin-left: 20px;
+    margin-top: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 20px; */
+    /* padding: 1rem; */
+    border: 5px solid #fff;
+    border-radius: 0px;
+    border-radius: 0px;
+    
+    box-shadow:  -10px -10px 20px #5b5b5b,
+             10px 10px 20px #ffffff;
+}
+.head-right {
+    display: inline-block;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    color: #5882af;
+    width: 70%;
+    font-size: 24px;
+    padding: 1rem;
+    text-shadow: 0px 0px 10px rgba(143, 178, 216, 0.7);
+}
+.head-right h1 {
+    display: flex;
+    height: 45%;
+    /* border: 1px solid red; */
+    /* margin-top: 80px; */
+    /* text-align: center; */
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.head-right hr {
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid #8fb2d8;
+}
+.head-right h3 {
+    height: 40%;
+    font-size: 16px;
+    padding: 1rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+/* Detail-Left*/
+.detail {
+    background: #eee;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    margin-bottom: 50px;
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.detail-left {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 55%;
+    /* border: 1px solid red; */
+}
+.detail-left .detail-contact-head {
+    text-align: center;
+    font-size: 22px;
+    color: #8fb2d8;
+    padding: 0px 0px 20px 0px;
+}
+.detail-left .detail-contact {
+    padding: 0px 30px;
+    border-left: 2px solid #969090;
+}
+.detail-left .detail-contact .contact-box {
+    position: relative;
+    padding: 20px;
+    border: 2px solid #eaeaea;
+    cursor: pointer;
+    transition: all 0.4s;
+    /* margin-bottom: 20px; */
+    width: 250px;
+    background-color: #d1d1d1;
+}
+.detail-left .detail-contact .contact-box:hover {
+    background-color: #fff;
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+.detail-left .detail-contact .contact-box:hover h3 {
+    color: #8fb2d8;
+}
+.detail-left .detail-contact .contact-box:hover p {
+    color: #8fb2d8;
+}
+.detail-left .detail-contact .contact-box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 23px);
+    top: -10px;
+    background-color: #74a0cf;
+    border: 2px solid #fff;
+}
+.contact-box h3 {
+    font-size: 22px;
+    padding: 0px 0px 10px 0px;
+    color: rgb(70, 70, 70);
+}
+.contact-box p {
+    line-height: 1.2;
+    color: rgb(109, 109, 109);
+    font-size: 16px;
+}
+
+
+/* Detail-wrapper */
+.detail-wrapper {
+    display: inline-flex;
+    list-style: none;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+.detail-wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    color: #5b5b5b;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.detail-wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.detail-wrapper .tooltip::before {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.detail-wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.detail-wrapper .icon:hover span,
+.detail-wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.detail-wrapper .facebook:hover,
+.detail-wrapper .facebook:hover .tooltip,
+.detail-wrapper .facebook:hover .tooltip::before {
+    background-color: #2C64F6;
+    color: #fff;
+}
+.detail-wrapper .instagram:hover,
+.detail-wrapper .instagram:hover .tooltip,
+.detail-wrapper .instagram:hover .tooltip::before {
+    background-color: #946FF6;
+    color: #fff;
+}
+.detail-wrapper .tiktok:hover,
+.detail-wrapper .tiktok:hover .tooltip,
+.detail-wrapper .tiktok:hover .tooltip::before {
+    background-color: #FF8F9F;
+    color: #fff;
+}
+.detail-wrapper .linkedin:hover,
+.detail-wrapper .linkedin:hover .tooltip,
+.detail-wrapper .linkedin:hover .tooltip::before {
+    background-color: #61d79e;
+    color: #fff;
+}
+.detail-wrapper .github:hover,
+.detail-wrapper .github:hover .tooltip,
+.detail-wrapper .github:hover .tooltip::before {
+    background-color: #9CC4FF;
+    color: #fff;
+}
+
+
+
+
+
+/* Detail-Right */
+.detail-right {
+    /* border: 2px solid red; */
+    /* width: 130%; */
+    height: 100%;
+    margin-left: -180px;
+    display: block;
+    background: #8fb2d8;
+    padding: 2rem;
+    border-radius: 5rem 0rem 0rem 0rem;
+}
+.detail-right h1 {
+    text-decoration: underline;
+    font-size: 30px;
+    padding: 0px 0px 10px 0px;
+    color: #fff;   
+}
+.detail-right p {
+    line-height: 1.6;
+    color: #fff;
+    font-size: 18px;
+}
+.detail-right .right-about {
+    padding: 1.3rem;
+}
+.detail-right .right-objective {
+    padding: 1.3rem;
+}
+.detail-right .right-education {
+    padding: 1.3rem;
+}
+.detail-right .right-work {
+    padding: 1.3rem;
+}
